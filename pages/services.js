@@ -1,4 +1,4 @@
-import "../css/Services.css";
+import "../styles/Services.module.css";
 
 
 

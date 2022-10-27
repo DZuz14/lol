@@ -1,6 +1,6 @@
-import '../css/components/Navbar.css';
-import img from '../img/logo.png';
-import { Link } from 'react-router-dom';
+import '../styles/Navbar.module.css';
+import img from '../public/img/logo.png';
+import Link from 'next/head';
 
 export default function Navbar() {
   return (
@@ -12,9 +12,9 @@ export default function Navbar() {
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><Link to="/" className="nav-link px-2 link-secondary">Naslovna</Link></li>
+        <li><Link href="/" className="nav-link px-2 link-secondary">Naslovna</Link></li>
           <li><a href="#" class="nav-link px-2 link-secondary">O nama</a></li>
-          <li><Link to="/services" className="nav-link px-2 link-secondary">Usluge</Link></li>
+          <li><Link href="/services" className="nav-link px-2 link-secondary">Usluge</Link></li>
           <li><a href="#" class="nav-link px-2 link-secondary">Blog</a></li>
           <li><a href="#" class="nav-link px-2 link-secondary">Kontakt</a></li>
         </ul>

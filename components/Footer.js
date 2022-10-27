@@ -1,4 +1,4 @@
-import "../styles/Footer.css";
+import Styles from "../styles/Footer.module.css";
 import marketmakers from "../public/img/marketmakers-sponzor.png";
 import youtube from "../public/img/youtube-icon.svg";
 import twitter from "../public/img/twitter-icon.svg";

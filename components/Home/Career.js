@@ -3,7 +3,7 @@ import shape from "../public/img/shape.png"
 import line from "../public/img/line.svg";
 import ellipse from "../public/img/ellipse.svg";
 
-import "../css/components/Career.css";
+import "../styles/Home/Career.module.css";
 
 
 export default function Career() {

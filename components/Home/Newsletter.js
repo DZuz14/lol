@@ -1,6 +1,6 @@
-import newsletter from "../img/newsletter.png";
-import "../css/components/Newsletter.css";
-import ellipse from "../img/ellipse.svg";
+import newsletter from "../public/img/newsletter.png";
+import "../styles/Home/Newsletter.module.css";
+import ellipse from "../public/img/ellipse.svg";
 
 
 export default function Newsletter() {

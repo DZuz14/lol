@@ -1,5 +1,5 @@
-import jasminMaric from "../img/maric.png";
-import "../css/components/Confessionals.css";
+import jasminMaric from "../public/img/maric.png";
+import "../styles/Home/Confessionals.module.css";
 
 
 export default function Confessionals() {

@@ -1,29 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-import Newsletter from "../components/home/Newsletter";
-import Confessionals from "../components/home/Confessionals";
-import Career from "../components/home/Career";
-import Services from "../components/Service";
-import BlogPost from "../components/PopularBlog";
-import Footer from "../components/Footer.js";
+// import Newsletter from "../components/home/Newsletter";
+// import Confessionals from "../components/home/Confessionals";
+// import Career from "../components/home/Career";
+// import Services from "../components/Service";
+// import BlogPost from "../components/PopularBlog";
 
 
-import facebook from "../public/img/facebook.png";
-import twitter from "../public/img/twitter.png";
-import youtube from "../public/img/youtube.png";
-import arrow from "../public/img/arrow.svg";
-import list from "../public/img/list.svg";
-import shape from "../public/img/home-shape.png";
-import line from "../public/img/line.svg";
-import sprinkles from "../public/img/sprinkles.png";
-import swirl from "../public/img/swirl-arrow.png"
+// import facebook from "../public/img/facebook.png";
+// import twitter from "../public/img/twitter.png";
+// import youtube from "../public/img/youtube.png";
+// import arrow from "../public/img/arrow.svg";
+// import list from "../public/img/list.svg";
+// import shape from "../public/img/home-shape.png";
+// import line from "../public/img/line.svg";
+// import sprinkles from "../public/img/sprinkles.png";
+// import swirl from "../public/img/swirl-arrow.png"
 
-import "../css/home.css";
+// import "../css/home.css";
 
 export default function Home() {
   return (
     <section>
-    <img
+    {/* <img
       src={sprinkles}
       height={62}
       className="position-absolute"
@@ -93,7 +92,7 @@ export default function Home() {
       <Confessionals />
       <Newsletter />
       <BlogPost />
-      <Footer />
+      */}
     </section>
   )
  };
