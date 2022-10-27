@@ -1,0 +1,30 @@
+.confessionals {
+    background-color: #f7f8fd;
+  }
+  
+  .confessionals .conf > p {
+    padding-right: 80px;
+    font-size: 22px;
+    line-height: 40px;
+    padding-left: 40px;
+  }
+  
+  .confessionals .conf > img {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 70%;
+    height: auto;
+  }
+  
+  .confessionals .name {
+    padding-left: 40px;
+    font-size: 18px;
+    font-style: bold;
+    font-family: "DMSans-bold";
+  }
+  
+  .confessionals .title {
+    padding-left: 40px;
+    font-size: 12px;
+    padding-bottom: 60px;
+  }

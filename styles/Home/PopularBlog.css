@@ -1,0 +1,50 @@
+.popular-blog {
+    padding-bottom: 100px;
+  }
+  
+  .days-icon {
+    padding-left: 30px;
+  }
+  
+  .text-content {
+    font-size: 35px;
+  }
+  
+  .blog-header {
+    font-size: 45px;
+  }
+  
+  .support-slider {
+    line-height: 33px;
+    font-size: 26px;
+    font-family: "DMSans-Medium";
+    font-stretch: expanded;
+  }
+  
+  .blog-small-wrap {
+    padding-top: 12px;
+    padding-left: 16px;
+  }
+  
+  .development-text {
+    font-weight: 800;
+    color: #423ef3;
+    font-size: 16px;
+  }
+  
+  .blog-image-large {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-image-small {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-left: 20px;
+  }
+  
