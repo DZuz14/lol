@@ -1,4 +1,4 @@
-import "../styles/Services.module.css";
+import "../styles/Home/Services.module.css";
 
 
 

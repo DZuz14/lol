@@ -1,12 +1,8 @@
-.navbar {
-    font-family: 'DMSans-Regular';
-  }
-  
-  .nav-logo {
-    padding-right: 160px;
-  }
-  
-  .nav-link {
-    padding-right: 20px !important;
-    padding-left: 20px !important;
-  }
+.navLogo {
+  padding-right: 160px;
+}
+
+.navbar li {
+  padding-right: 20px;
+  padding-left: 20px;
+}

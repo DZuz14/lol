@@ -1,31 +1,69 @@
-import '../styles/Navbar.module.css';
-import logo from '../public/img/logo.png';
-import Link from 'next/head';
+/* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
+import classNames from 'classnames';
+
+import styles from '../styles/Navbar.module.css';
 
 export default function Navbar() {
   return (
-    <header class="p-3 mb-3">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-          <img className='nav-logo' src={logo} alt="partner" height={45} />
-        </a>
+    <header className="p-3 mb-3">
+      <div className={classNames('container', styles.navbar)}>
+        <div className="row align-items-center justify-content-center">
+          <Link
+            href="/"
+            className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
+          >
+            <img
+              className={styles.navLogo}
+              src="/img/logo.png"
+              alt="partner"
+              height={45}
+            />
+          </Link>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><Link href="/" className="nav-link px-2 link-secondary">Naslovna</Link></li>
-          <li><a href="#" class="nav-link px-2 link-secondary">O nama</a></li>
-          <li><Link href="/services" className="nav-link px-2 link-secondary">Usluge</Link></li>
-          <li><a href="#" class="nav-link px-2 link-secondary">Blog</a></li>
-          <li><a href="#" class="nav-link px-2 link-secondary">Kontakt</a></li>
-        </ul>
+          <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li>
+              <Link href="/" className="nav-link px-2 link-secondary">
+                Naslovna
+              </Link>
+            </li>
 
-        <div class="text-end">
-          <button type="button" class="btn btn-primary-outline btn-lg"> Login </button>
-          <button type="button" class="btn btn-primary btn-lg">Pridruži se </button>
+            <li>
+              <Link href="#" className="nav-link px-2 link-secondary">
+                O nama
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/services" className="nav-link px-2 link-secondary">
+                Usluge
+              </Link>
+            </li>
+
+            <li>
+              <Link href="#" className="nav-link px-2 link-secondary">
+                Blog
+              </Link>
+            </li>
+
+            <li>
+              <Link href="#" className="nav-link px-2 link-secondary">
+                Kontakt
+              </Link>
+            </li>
+          </ul>
+
+          <div className="text-end">
+            <button type="button" className="btn btn-primary-outline btn-lg">
+              Login
+            </button>
+
+            <button type="button" className="btn btn-primary btn-lg">
+              Pridruži se
+            </button>
+          </div>
         </div>
-        
       </div>
-    </div>
-  </header>
+    </header>
   );
 }
