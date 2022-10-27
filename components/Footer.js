@@ -10,11 +10,14 @@ import footerbackground from "../public/img/footerbg.svg";
 
 
 
-
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
+import classNames from 'classnames';
+import styles from '../styles/Footer.module.css';
 
 export default function Footer() {
   return (
-    <div className="Footer">
+    <div className={styles.footer}>
       <footer className="pb-4">
         <div className="container">
           <div className="row">
@@ -29,18 +32,18 @@ export default function Footer() {
                     secure. claritatem itamconse quat. Exerci tation
                   </p>
 
-                  <div className="footer-icons">
-                    <img src={youtube} />
-                    <img className="" src={twitter} />
-                    <img src={facebook} />
-                    <img src={skype} />
+                  <div className={styles.footerIcons}>
+                    <img src="/img/youtube-icon.svg" />
+                    <img src="/img/twitter-icon.svg" />
+                    <img src="/img/facebook-icon.svg" />
+                    <img src="/img/skype-icon.svg" />
                   </div>
                 </div>
 
-                <div className="col-md-6">
-                  <h5 className="learning-list pb-5">Learning</h5>
+                <div className={classNames('col-md-6', styles.learningList)}>
+                  <h5 className="pb-5">Learning</h5>
 
-                  <ul className="text-secondary learning-list">
+                  <ul className="text-secondary">
                     <li>Learn Collax</li>
                     <li>Manuals</li>
                     <li>Tutorials</li>
@@ -57,21 +60,21 @@ export default function Footer() {
                 <div className="col-md-12 d-flex justify-content-end pb2">
                   <img
                     className="align-self-end pb-5 betastudio-sponsor"
-                    src={betastudio}
+                    src="/img/betastudio_logo.svg"
                   />
                 </div>
 
                 <div className="col-md-6 d-flex justify-content-end">
                   <img
                     className="align-self-end pb-5 swiss-sponsor"
-                    src={swiss}
+                    src="/img/swiss-sponzor.png"
                   />
                 </div>
 
                 <div className="col-md-6 d-flex justify-content-end">
                   <img
                     className="align-self-end pb-5 marketmakers-sponsor"
-                    src={marketmakers}
+                    src="/img/marketmakers-sponzor.png"
                   />
                 </div>
               </div>
@@ -81,7 +84,7 @@ export default function Footer() {
 
         {/* Separator */}
         <div className="container pt-5 pb-3">
-          <div className="separator" />
+          <div className={styles.separator} />
         </div>
 
         {/* Bottom */}
@@ -94,7 +97,7 @@ export default function Footer() {
 
             <div className="col-md-5">
               <ul className="justify-content-end">
-                <div className="d-flex footer-list">
+                <div className={classNames('d-flex', styles.footerList)}>
                   <li>Terms and conditions</li>
                   <li>Privacy policy</li>
                   <li>Login/Signup</li>
@@ -107,3 +110,4 @@ export default function Footer() {
     </div>
   );
 }
+
