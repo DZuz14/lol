@@ -2,28 +2,28 @@
     background-color: #f7f8fd;
   }
   
-  .confessionals .conf > p {
+  .confessionalText > p {
     padding-right: 80px;
     font-size: 22px;
     line-height: 40px;
     padding-left: 40px;
   }
   
-  .confessionals .conf > img {
+  .confessionalText > img {
     margin-top: 70px;
     margin-bottom: 70px;
-    width: 70%;
+    width: 80%;
     height: auto;
   }
   
-  .confessionals .name {
+  .name {
     padding-left: 40px;
     font-size: 18px;
     font-style: bold;
     font-family: "DMSans-bold";
   }
   
-  .confessionals .title {
+  .title {
     padding-left: 40px;
     font-size: 12px;
     padding-bottom: 60px;

@@ -1,98 +1,94 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
-// import Newsletter from "../components/home/Newsletter";
-// import Confessionals from "../components/home/Confessionals";
-// import Career from "../components/home/Career";
-// import Services from "../components/Service";
-// import BlogPost from "../components/PopularBlog";
 
+import Service from '../components/Home/Service';
+import Career from '../components/Home/Career';
 
-// import facebook from "../public/img/facebook.png";
-// import twitter from "../public/img/twitter.png";
-// import youtube from "../public/img/youtube.png";
-// import arrow from "../public/img/arrow.svg";
-// import list from "../public/img/list.svg";
-// import shape from "../public/img/home-shape.png";
-// import line from "../public/img/line.svg";
-// import sprinkles from "../public/img/sprinkles.png";
-// import swirl from "../public/img/swirl-arrow.png"
-
-// import "../css/home.css";
+import classNames from 'classnames';
+import styles from '../styles/Home/home.module.css';
+import Confessionals from '../components/Home/Confessionals';
 
 export default function Home() {
   return (
-    <section>
-    {/* <img
-      src={sprinkles}
-      height={62}
-      className="position-absolute"
-      style={{ left: 50, top: 250 }}
-    />
+    <div>
+      <section className={styles.Home}>
+        <img
+          src="/img/sprinkles.png"
+          height={62}
+          className="position-absolute"
+          style={{ left: 50, top: 250 }}
+        />
 
-    <div className="home container pt-5">
-      <div className="row">
-    
+        <div className="home container pt-5">
+          <div className="row">
+            <div className="col-6">
+              <h1 className={styles.h1}>
+                Neki catchy title{' '}
+                <div className="d-inline-flex position-relative">
+                  <div>za ljude</div>
+                  <img
+                    src="/img/line.svg"
+                    style={{
+                      position: 'absolute',
+                      bottom: 15,
+                      zIndex: -99,
+                      left: 2,
+                    }}
+                  />
+                </div>
+                koji hoce da freelancejau
+              </h1>
 
-        <div className="col-6">
-          <h1>
-            Neki catchy title{' '}
-            <div className="d-inline-flex position-relative">
-              <div>za ljude</div>
+              <p className="pt-2 pb-4 muted"> Lorem ipsum nesto se pise </p>
+              <button className="btn btn-primary btn-lg pb">Pridruzi se</button>
+
+              <div
+                className={classNames(
+                  'd-flex',
+                  'flex-row',
+                  'position-relative',
+                  styles.socialIcons
+                )}
+              >
+                <img
+                  className="position-absolute"
+                  src="/img/swirl-arrow.png"
+                  height={40}
+                  style={{ left: -170, top: 120 }}
+                />
+
+                <div class="p-2">
+                  <img src="/img/facebook.png" alt="Facebook" height={15} />
+                </div>
+
+                <div class="p-2">
+                  <img src="/img/twitter.png" alt="Twitter" height={15} />
+                </div>
+
+                <div class="p-2">
+                  <img src="/img/youtube.png" alt="Youtube" height={15} />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-1"></div>
+
+            <div className="col-5">
               <img
-                src={line}
-                style={{
-                  position: 'absolute',
-                  bottom: 15,
-                  zIndex: -99,
-                  left: 2,
-                }}
+                className="img-fluid"
+                src="/img/home-shape.png"
+                style={{ marginTop: 60 }}
               />
-            </div>
-            koji hoce da freelancejau
-          </h1>
-
-          <p className="pt-2 pb-4 muted"> Lorem ipsum nesto se pise </p>
-          <button className="btn btn-primary btn-lg pb"> Pridruzi se </button>
-
-          <div class="d-flex flex-row social-icons position-relative">
-            <img
-              className="position-absolute"
-              src={swirl}
-              height={40}
-              style={{ left: -170, top: 120 }}
-            />
-
-            <div class="p-2">
-              <img src={facebook} alt="Facebook" height={15} />{' '}
-            </div>
-            <div class="p-2">
-              <img src={twitter} alt="Twitter" height={15} />{' '}
-            </div>
-            <div class="p-2">
-              <img src={youtube} alt="Youtube" height={15} />{' '}
             </div>
           </div>
         </div>
-        <div className="col-1"></div>
-
-        <div className="col-5">
-          <img
-            className="img-fluid"
-            src={shape}
-            style={{ marginTop: 60 }}
-          />
-        </div>
-      </div>
+      </section>
+<Service />
+<Career />
+<Confessionals />
+      {/* Import rest of home components here. */}
+     
     </div>
-
-
-
-      <Services />
-      <Career />
-      <Confessionals />
-      <Newsletter />
-      <BlogPost />
-      */}
-    </section>
-  )
- };
+  );
+}

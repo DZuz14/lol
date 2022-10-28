@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="row align-items-center justify-content-center">
           <Link
             href="/"
-            className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
+            className="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none"
           >
             <img
               className={styles.navLogo}
@@ -23,7 +23,7 @@ export default function Navbar() {
 
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <Link href="/" className="nav-link px-2 link-secondary">
+              <Link href="/" className="nav-link px-2 link-secondary aria-current">
                 Naslovna
               </Link>
             </li>
