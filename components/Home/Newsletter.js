@@ -1,16 +1,20 @@
-import newsletter from "../public/img/newsletter.png";
-import "../styles/Home/Newsletter.module.css";
-import ellipse from "../public/img/ellipse.svg";
-
+import styles from "../../styles/Home/Newsletter.module.css";
+import classNames from "classnames";
 
 export default function Newsletter() {
   return (
-    <div className="newsletter">
+    <div className={styles.newsletter}>
       <div className="container">
         <div className="row">
           <div className="col-lg-1"></div>
           <div className="col-lg-6 pt-5">
-            <div className="pt-5 pb-3 link-secondary text-white"> <img className="pb-1" style={{ marginRight: 5 }} src={ellipse}/>
+            <div className="pt-5 pb-3 link-secondary text-white">
+              {" "}
+              <img
+                className="pb-1"
+                style={{ marginRight: 5 }}
+                src="/img/ellipse.svg"
+              />
               Get every update
             </div>
 
@@ -18,7 +22,13 @@ export default function Newsletter() {
               Subsribe na newsletter i prvi dobij nove vijesti bla bla
             </h2>
 
-            <div className="subscribe d-flex justify-content-between">
+            <div
+              className={classNames(
+                "d-flex",
+                "justify-content-between",
+                styles.subscribe
+              )}
+            >
               <input
                 className="form-control"
                 type="email"
@@ -29,7 +39,11 @@ export default function Newsletter() {
           </div>
 
           <div className="col-lg-4 pt-5 pb-5 newsletter text-center img">
-            <img className="newsletter-img" src={newsletter} alt="shape"></img>
+            <img
+              className={styles.newsletterImg}
+              src="/img/newsletter.png"
+              alt="shape"
+            ></img>
           </div>
         </div>
       </div>

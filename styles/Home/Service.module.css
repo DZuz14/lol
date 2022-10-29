@@ -3,15 +3,15 @@
   width: 100%;
 }
 
-.serviceCard {
-  min-height: 230px;
+.cardSection > div > div {
+  min-height: 250px;
   background: #ffffff;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   padding: 50px;
 }
 
-.serviceCard p {
+.cardSection p {
   font-weight: 700;
 }
 

@@ -2,12 +2,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 
-import Service from '../components/Home/Service';
-import Career from '../components/Home/Career';
+import Service from "../components/Home/Service";
+import Career from "../components/Home/Career";
 
-import classNames from 'classnames';
-import styles from '../styles/Home/home.module.css';
-import Confessionals from '../components/Home/Confessionals';
+import classNames from "classnames";
+import styles from "../styles/Home/home.module.css";
+import Confessionals from "../components/Home/Confessionals";
+import Newsletter from "../components/Home/Newsletter";
 
 export default function Home() {
   return (
@@ -24,13 +25,13 @@ export default function Home() {
           <div className="row">
             <div className="col-6">
               <h1 className={styles.h1}>
-                Neki catchy title{' '}
+                Neki catchy title{" "}
                 <div className="d-inline-flex position-relative">
                   <div>za ljude</div>
                   <img
                     src="/img/line.svg"
                     style={{
-                      position: 'absolute',
+                      position: "absolute",
                       bottom: 15,
                       zIndex: -99,
                       left: 2,
@@ -45,9 +46,9 @@ export default function Home() {
 
               <div
                 className={classNames(
-                  'd-flex',
-                  'flex-row',
-                  'position-relative',
+                  "d-flex",
+                  "flex-row",
+                  "position-relative",
                   styles.socialIcons
                 )}
               >
@@ -84,11 +85,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-<Service />
-<Career />
-<Confessionals />
+      <Service />
+      <Career />
+      <Confessionals />
+      <Newsletter />
       {/* Import rest of home components here. */}
-     
     </div>
   );
 }
