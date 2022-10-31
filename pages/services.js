@@ -53,8 +53,8 @@ export default function Services() {
           </div>
         </div>
         <div className="container">
-          <div className="row">
-            <div className="col-md-10">
+          <div className={classNames("row", styles.testimonial)}>
+            <div className="col-md-9">
               <div className={styles.companyIcon}>
                 <img src="/img/amazon-icon.svg" alt="company-icon" />
               </div>
@@ -68,25 +68,146 @@ export default function Services() {
               </p>
               <div className={classNames("d-flex", styles.reviewerIcon)}>
                 <img src="/img/review-icon.svg" alt="reviewer-icon" />
-                <div className={classNames("font-weight-bold", styles.name)}>
-                  Jane Cooper
-                </div>
-                <div
-                  className={classNames(
-                    "text-secondary",
-                    "text-uppercase",
-                    styles.title
-                  )}
-                >
-                  Product designer (Amazon){" "}
+                <div>
+                  <div
+                    className={classNames(
+                      "font-weight-bold",
+                      "pl-3",
+                      styles.name
+                    )}
+                  >
+                    Jane Cooper
+                  </div>
+                  <div
+                    className={classNames(
+                      "text-secondary",
+                      "text-uppercase",
+                      "pl-3",
+                      styles.title
+                    )}
+                  >
+                    Product designer (Amazon){" "}
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-2 d-flex align-items-center justify-content-center">
+            <div className="col-md-3 d-flex align-items-center justify-content-center">
+              <button className={styles.perkButton}>Apliciraj za perk</button>
+            </div>
+          </div>
+
+          <div className={classNames("row", styles.testimonial)}>
+            <div className="col-md-9">
+              <div className={styles.companyIcon}>
+                <img src="/img/amazon-icon.svg" alt="company-icon" />
+              </div>
+
+              <p>
+                One of the best designers that turns the client pain points and
+                requests into magnificent designs. Aware of all the aspect that
+                should be considered to fulfill the requirements in high-quality
+                implementation as an expected end result. Has patience while
+                receiving and confirming the requirements, conducting{" "}
+              </p>
+              <div className={classNames("d-flex", styles.reviewerIcon)}>
+                <img src="/img/review-icon.svg" alt="reviewer-icon" />
+                <div>
+                  <div
+                    className={classNames(
+                      "font-weight-bold",
+                      "pl-3",
+                      styles.name
+                    )}
+                  >
+                    Jane Cooper
+                  </div>
+                  <div
+                    className={classNames(
+                      "text-secondary",
+                      "text-uppercase",
+                      "pl-3",
+                      styles.title
+                    )}
+                  >
+                    Product designer (Amazon){" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 d-flex align-items-center justify-content-center">
+              <button className={styles.perkButton}>Apliciraj za perk</button>
+            </div>
+          </div>
+          <div className={classNames("row", styles.testimonial)}>
+            <div className="col-md-9">
+              <div className={styles.companyIcon}>
+                <img src="/img/amazon-icon.svg" alt="company-icon" />
+              </div>
+
+              <p>
+                One of the best designers that turns the client pain points and
+                requests into magnificent designs. Aware of all the aspect that
+                should be considered to fulfill the requirements in high-quality
+                implementation as an expected end result. Has patience while
+                receiving and confirming the requirements, conducting{" "}
+              </p>
+              <div className={classNames("d-flex", styles.reviewerIcon)}>
+                <img src="/img/review-icon.svg" alt="reviewer-icon" />
+                <div>
+                  <div
+                    className={classNames(
+                      "font-weight-bold",
+                      "pl-3",
+                      styles.name
+                    )}
+                  >
+                    Jane Cooper
+                  </div>
+                  <div
+                    className={classNames(
+                      "text-secondary",
+                      "text-uppercase",
+                      "pl-3",
+                      styles.title
+                    )}
+                  >
+                    Product designer (Amazon){" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 d-flex align-items-center justify-content-center">
               <button className={styles.perkButton}>Apliciraj za perk</button>
             </div>
           </div>
         </div>
+
+        <div className={classNames("text-center", styles.bottomPage)}>
+          <div className="container">
+              <div className={("text-center", "pb-5", styles.bottomText)}>
+                <h1>Sugeriši partnera za freelance alijansu!</h1>
+
+                <div>
+                  <p className="text-center pt-5 pb-5">
+                    We had the pleasure of being a partner for companies from
+                    markets like Fintech, Health, Government, Security, Big Data and many more.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              className={classNames(
+                "justify-content-center",
+                "text-center",
+                styles.perkButton
+              )}
+            >
+              Estimate-Project
+            </button>
+          </div>
+       
+      
       </section>
     </div>
   );
