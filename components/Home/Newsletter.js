@@ -34,7 +34,7 @@ export default function Newsletter() {
                 type="email"
                 placeholder="Enter your email"
               />
-              <button class="subscribe-button">Subcribe</button>
+              <button className="subscribe-button">Subcribe</button>
             </div>
           </div>
 

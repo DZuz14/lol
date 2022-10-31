@@ -41,16 +41,53 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <div className="container">
-        <div className={styles.tabsArea}>
-          <button className={styles.tabButton}>
-            Coworking & office prostori
-          </button>
-          <button className={styles.tabButtonOpaque}>
-            Coworking & office prostori
-          </button>
+      <section className="padding-lg">
+        <div className="container">
+          <div className={styles.tabsArea}>
+            <button className={styles.tabButton}>
+              Coworking & office prostori
+            </button>
+            <button className={styles.tabButtonOpaque}>
+              Virtual office & poslovna adresa
+            </button>
+          </div>
         </div>
-      </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-10">
+              <div className={styles.companyIcon}>
+                <img src="/img/amazon-icon.svg" alt="company-icon" />
+              </div>
+
+              <p>
+                One of the best designers that turns the client pain points and
+                requests into magnificent designs. Aware of all the aspect that
+                should be considered to fulfill the requirements in high-quality
+                implementation as an expected end result. Has patience while
+                receiving and confirming the requirements, conducting{" "}
+              </p>
+              <div className={classNames("d-flex", styles.reviewerIcon)}>
+                <img src="/img/review-icon.svg" alt="reviewer-icon" />
+                <div className={classNames("font-weight-bold", styles.name)}>
+                  Jane Cooper
+                </div>
+                <div
+                  className={classNames(
+                    "text-secondary",
+                    "text-uppercase",
+                    styles.title
+                  )}
+                >
+                  Product designer (Amazon){" "}
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2 d-flex align-items-center justify-content-center">
+              <button className={styles.perkButton}>Apliciraj za perk</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
