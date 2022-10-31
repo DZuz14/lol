@@ -181,33 +181,36 @@ export default function Services() {
             </div>
           </div>
         </div>
+      </section>
 
-        <div className={classNames("text-center", styles.bottomPage)}>
+      <section className={classNames("padding-lg", styles.bottomPage)}>
+        <div className="text-center">
           <div className="container">
-              <div className={("text-center", "pb-5", styles.bottomText)}>
-                <h1>Sugeriši partnera za freelance alijansu!</h1>
+            <div
+              className={classNames("text-center", "pb-5", styles.bottomText)}
+            >
+              <h1>Sugeriši partnera za freelance alijansu!</h1>
 
-                <div>
-                  <p className="text-center pt-5 pb-5">
-                    We had the pleasure of being a partner for companies from
-                    markets like Fintech, Health, Government, Security, Big Data and many more.
-                  </p>
-                </div>
+              <div>
+                <p className="text-center pt-5">
+                  We had the pleasure of being a partner for companies from
+                  markets like Fintech, Health, Government, Security, Big Data
+                  and many more.
+                </p>
               </div>
             </div>
-
-            <button
-              className={classNames(
-                "justify-content-center",
-                "text-center",
-                styles.perkButton
-              )}
-            >
-              Estimate-Project
-            </button>
           </div>
-       
-      
+
+          <button
+            className={classNames(
+              "justify-content-center",
+              "text-center",
+              styles.perkButton
+            )}
+          >
+            Estimate-Project
+          </button>
+        </div>
       </section>
     </div>
   );
