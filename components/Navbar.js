@@ -6,7 +6,7 @@ import styles from '../styles/Navbar.module.css';
 
 export default function Navbar() {
   return (
-    <header className="p-3 mb-3">
+    <header className={classNames('p-3', 'mb-3', styles.nav)}>
       <div className={classNames('container', styles.navbar)}>
         <div className="row align-items-center justify-content-center">
           <Link

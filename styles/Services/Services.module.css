@@ -1,0 +1,32 @@
+.servicesButton {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 2px 55px rgba(209, 214, 226, 0.32);
+  border-radius: 10px;
+  border-bottom: 3px solid #6563e8;
+}
+
+.h1 {
+  font-size: 75px;
+  max-width: 625px;
+}
+
+.tabsArea {
+  background: rgba(249, 250, 251, 1);
+  padding: 7px 20px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.tabButton {
+  height: 76px;
+  background: white;
+  padding: 0 42px;
+  margin-right: 10px;
+  border: none;
+}
+
+.tabButtonOpaque {
+  background: none;
+  border: none;
+}

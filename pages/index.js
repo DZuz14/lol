@@ -80,7 +80,7 @@ export default function Home() {
 
             <div className="col-4">
               <img
-                className="img"
+                className={styles.homePageThumbnail}
                 src="/img/home-shape.png"
                 style={{ marginTop: 60 }}
               />

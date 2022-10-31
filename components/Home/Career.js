@@ -12,11 +12,11 @@ export default function Career() {
 <div className="freelance">
 <div className="container pt-5 pb-5">
   <div className="row">
-    <div className={classNames('col-lg-6', 'text-center', styles.shape)}>
+    <div className={classNames('col-md-6', 'text-center', styles.shape)}>
       <img src="/img/shape.png" />
     </div>
 
-    <div className="col-lg-4">
+    <div className="col-md-6">
       <div className="pt-5 pb-3 link-secondary"> <img className="pb-1" style={{ marginRight: 5 }} src="/img/ellipse.svg" /> O nama </div>
       <h2 className="pt-3 pb-5">
         Zašto da započnete freelance {" "} 
