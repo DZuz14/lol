@@ -1,8 +1,9 @@
 
 .h1 {
-  padding-top: 60px;
+  padding-top: 110px;
   font-size: 75px;
   max-width: 625px;
+  padding-left: -60px;
 }
 
 .socialIcons {

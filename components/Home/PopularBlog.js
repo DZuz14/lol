@@ -1,32 +1,26 @@
-import placeholdertwo from "../img/placeholdertwo.png";
-import placeholder from "../img/placeholder.png";
-import threedays from "../img/threedays.svg";
-import threedaysago from "../img/threedaysago.svg";
-import line from "../img/line.svg";
-import ellipse from "../img/ellipse.svg";
+import styles from "../../styles/Home/PopularBlog.module.css";
+import classNames from "classnames";
 
-
-import "../css/components/PopularBlog.css";
 
 export default function BlogPost() {
   return (
     <section>
-      <div className="popular-blog">
+      <div className={styles.popularBlog}>
         <div className="container pt-5">
-          <div className="row">
+         
             <div className="col-lg-1"></div>
 
-            <div className="text-center link-secondary pt-5 pb-3"> <img className="pb-1" style={{ marginRight: 5 }} src={ellipse} />
+            <div className="text-center link-secondary pt-5 pb-4"> <img className={'pb-1'} style={{ marginRight: 5 }} src="/img/ellipse.svg" />
               Blog Post
             </div>
 
-            <h2 className="pb-5 text-center justify-content blog-header">
+            <h2 className={classNames('pb-5', 'text-center', 'justify-content', styles.blogHeader)}>
               Popular {" "}
-              <div className="d-inline-flex position-relative">
+              <div className="d-inline-flex position-relative text-center">
               <div style={{ zIndex: 2 }}> blog post </div>
               <img
                   width={200}
-                  src={line}
+                  src="/img/line.svg"
                   style={{
                     position: "absolute",
                     bottom: 5,
@@ -36,24 +30,24 @@ export default function BlogPost() {
                 />
               </div>
             </h2>
-
+            <div className="row">
             <div className="col-lg-7 pt-5 pb-5 placeholder">
               <img
-                className="blog-image-large"
-                src={placeholder}
+                className={styles.blogImageLarge}
+                src="/img/placeholder.png"
                 alt="placeholder"
               />
 
               <div className="row mt-3">
-                <div className="col-md-4 pb-2 text-primary development-text">
+                <div className={classNames('col-md-4', 'pb-2', 'text-primary', styles.developmentText)}>
                   DEVELOPMENT
                 </div>
                 <div className="col-md-4">
-                  <img src={threedays} />
+                  <img src="/img/threedaysago.svg" />
                 </div>
               </div>
 
-              <h3 className="pt-3 pb-3 text-content">
+              <h3 className={classNames('pt-3', 'pb-3', styles.textContent)}>
                 Best web design trend of this...
               </h3>
 
@@ -68,8 +62,8 @@ export default function BlogPost() {
               <div className="row">
                 <div className="col-md-5 mb-3 pb-4">
                   <img
-                    className="blog-image-small"
-                    src={placeholdertwo}
+                    className={styles.blogImageSmall}
+                    src="/img/placeholdertwo.png"
                   
                   />
                 </div>
@@ -77,14 +71,14 @@ export default function BlogPost() {
                 <div className="col-md-7 pb-3">
                   <div className="blog-small-wrap">
                     <div className="d-flex">
-                      <div className="text-primary pb-3 development-text">
+                      <div className={classNames('text-primary', 'pb-3', styles.developmentText)}>
                         DEVELOPMENT
                       </div>
                       <div>
-                        <img className="days-icon" src={threedaysago} />
+                        <img className={styles.daysIcon} src="/img/threedaysago.svg" />
                       </div>
                     </div>
-                    <h3 className="support-slider">
+                    <h3 className={styles.supportSlider}>
                       Godaddy user flow solution for every individual
                     </h3>
                   </div>
@@ -93,20 +87,20 @@ export default function BlogPost() {
 
               <div className="row">
                 <div className="col-md-5 mb-3 pb-4">
-                  <img className="blog-image-small" src={placeholdertwo} />
+                  <img className={styles.blogImageSmall} src="/img/placeholdertwo.png" />
                 </div>
 
                 <div className="col-md-6 mb-3 right-text">
-                  <div className="blog-small-wrap">
+                  <div className={styles.blogSmallWrap}>
                   <div className="d-flex">
-                    <div className="text-primary pb-3 development-text">
+                    <div className={classNames('text-primary', 'pb-3', styles.developmentText)}>
                       DEVELOPMENT
                     </div>
                     <div>
-                      <img className="days-icon" src={threedaysago} />
+                      <img className={styles.daysIcon} src="/img/threedaysago.svg" />
                     </div>
                   </div>
-                  <h3 className="support-slider">
+                  <h3 className={styles.supportSlider}>
                     Business solution for every individual
                   </h3>
                 </div>
@@ -115,20 +109,20 @@ export default function BlogPost() {
 
               <div className="row">
                 <div className="col-md-5 mb-3 pb-4">
-                  <img className="blog-image-small" src={placeholdertwo} />
+                  <img className={styles.blogImageSmall} src="/img/placeholdertwo.png" />
                 </div>
 
                 <div className="col-md-7 mb-3">
-                  <div className="blog-small-wrap">
+                  <div className={styles.blogSmallWrap}>
                   <div className="d-flex">
-                    <div className="text-primary pb-3 development-text">
+                    <div className={classNames('text-primary', 'pb-3', styles.developmentText)}>
                       DEVELOPMENT
                     </div>
                     <div>
-                      <img className="days-icon" src={threedaysago} />
+                      <img className={styles.daysIcon} src="/img/threedaysago.svg" />
                     </div>
                   </div>
-                  <h3 className="support-slider">
+                  <h3 className={styles.supportSlider}>
                     How to gain pro experience ar figma update version
                   </h3>
                 </div>

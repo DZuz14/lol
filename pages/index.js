@@ -9,6 +9,7 @@ import classNames from "classnames";
 import styles from "../styles/Home/home.module.css";
 import Confessionals from "../components/Home/Confessionals";
 import Newsletter from "../components/Home/Newsletter";
+import PopularBlog from "../components/Home/PopularBlog";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
 
         <div className="home container pt-5">
           <div className="row">
-            <div className="col-6">
+            <div className="col-8">
               <h1 className={styles.h1}>
                 Neki catchy title{" "}
                 <div className="d-inline-flex position-relative">
@@ -38,10 +39,14 @@ export default function Home() {
                     }}
                   />
                 </div>
-                koji hoce da freelancejau
+                {" "} koji hoce da freelancejau
               </h1>
 
-              <p className="pt-2 pb-4 muted"> Lorem ipsum nesto se pise </p>
+              <p className="pt-2 pb-4 muted">
+                {" "}
+                At collax we specialize in designing, building, shipping and
+                scaling beautiful, usable products with blazing-fast efficiency{" "}
+              </p>
               <button className="btn btn-primary btn-lg pb">Pridruzi se</button>
 
               <div
@@ -73,11 +78,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-1"></div>
-
-            <div className="col-5">
+            <div className="col-4">
               <img
-                className="img-fluid"
+                className="img"
                 src="/img/home-shape.png"
                 style={{ marginTop: 60 }}
               />
@@ -89,7 +92,7 @@ export default function Home() {
       <Career />
       <Confessionals />
       <Newsletter />
-      {/* Import rest of home components here. */}
+      <PopularBlog />
     </div>
   );
 }
