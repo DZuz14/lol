@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
-import classNames from 'classnames';
+import Link from "next/link";
+import classNames from "classnames";
 
-import styles from '../styles/Navbar.module.css';
+import styles from "../styles/Navbar.module.css";
 
 export default function Navbar() {
   return (
-    <header className={classNames('p-3', 'mb-3', styles.nav)}>
-      <div className={classNames('container', styles.navbar)}>
+    <header className={classNames("p-3", "mb-3", styles.nav)}>
+      <div className={classNames("container", styles.navbar)}>
         <div className="row align-items-center justify-content-center">
           <Link
             href="/"
@@ -21,10 +21,13 @@ export default function Navbar() {
             />
           </Link>
 
-          <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <ul className="nav col-10 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <Link href="/" className="nav-link px-2 link-secondary aria-current
-">
+              <Link
+                href="/"
+                className="nav-link px-2 link-secondary aria-current
+"
+              >
                 Naslovna
               </Link>
             </li>
@@ -50,6 +53,14 @@ export default function Navbar() {
             <li>
               <Link href="#" className="nav-link px-2 link-secondary">
                 Kontakt
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/faq"
+                className="nav-link px-2 link-secondary aria-current" >
+                FAQ
               </Link>
             </li>
           </ul>
