@@ -1,13 +1,29 @@
 .servicesButton {
-    background-color: white;
-    color: black;
-    box-shadow: 0px 2px 55px rgba(209, 214, 226, 0.32);
-    border-radius: 10px;
-    border-bottom: 3px solid #6563e8;
-  }
+  background-color: white;
+  color: black;
+  box-shadow: 0px 2px 55px rgba(209, 214, 226, 0.32);
+  border-radius: 10px;
+  border-bottom: 3px solid #6563e8;
+}
 
+.h1 {
+  font-size: 75px;
+  max-width: 625px;
+}
 
-  .h1 {
-    font-size: 75px;
-    max-width: 625px;
-  }
+.accordion {
+  width: 50%;
+}
+
+.firstCard {
+  background-color: rgba(245, 245, 245, 1);
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+}
+
+.card {
+  background: #ffffff !important;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 39px 33px rgba(49, 66, 99, 0.01);
+  border-radius: 10px;
+}
